@@ -1,6 +1,6 @@
 // let variablenname = wert;
-let vorname = "Marc";
-let nachname = 'Fenz';
+let vorname = "Heinz";
+let nachname = 'Gruber';
 
 // Zusammenfügen von Strings mit dem + Operator
 let vollerName = vorname + ' ' + nachname;

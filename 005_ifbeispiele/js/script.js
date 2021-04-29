@@ -16,5 +16,5 @@ if(alter >= 16 && alter < 18){
 } else if(alter >= 18){
     console.log("Darf alles trinken!!");
 } else {
-    console.log("Nein.");
+    console.log("Darf nicht Alkohol trinken.");
 }

@@ -1,5 +1,5 @@
-let vorname = "Marc";
-let nachname = "Fenz";
+let vorname = "Heinz";
+let nachname = "Gruber";
 
 let gewicht = 70.9;
 let verheiratet = false; // oder true
