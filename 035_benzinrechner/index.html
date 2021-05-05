@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Willkommen!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-3.6.0.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h1>Benzinrechner</h1>
+    <h2>Tankrechnung hinzufügen</h2>
+    <form>
+        <div>
+            <label>Getankte Liter</label> <br/>
+            <input type="text" name="liter">
+        </div>
+        <div>
+            <label>Gefahrene Kilometer</label> <br/>
+            <input type="text" name="km">
+        </div>
+        <div>
+            <label>Bezahlter Betrag (Euro)</label> <br/>
+            <input type="text" name="betrag">
+        </div>
+        <button>Tankrechnung hinzufügen</button>
+    </form>
+    <h2>Übersicht</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Liter</th>
+                <th>km</th>
+                <th>Betrag (Euro)</th>
+                <th>l/100km</th>
+                <th>€/km</th>
+                <th>Löschen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>50</td>
+                <td>1000</td>
+                <td>55.12</td>
+                <td>5</td>
+                <td>0.055</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <h2>Tank-Statistik</h2>
+    <p>Sie verwalten 
+        <span data-stat-tankbelege>0</span>
+        Tankbelege.
+    </p>
+    <p>Sie sind  
+        <span data-stat-km>0</span> km gefahren und
+        haben <span data-stat-l>0</span> Liter getankt.
+    </p>
+    <p>Der Durchschnittsverbrauch beträgt 
+        <span data-stat-verbrauch>0</span> l/100km.
+    </p>
+</body>
+</html>
