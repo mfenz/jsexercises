@@ -1,0 +1,41 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.highlight {
+    color: red;
+}
+
+/*div:nth-child(odd){
+    color: yellow;
+}*/
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#courses {
+    /* padding: 8px;; */
+}
+
+#courses tr {
+    /* padding:  8px; */
+    
+}
+
+#courses tr td, #courses tr th {
+    padding:  8px;
+    /* margin: 8px; */
+    text-align: center;
+}
+
+#fee-slider {
+    max-width: 300px;
+}

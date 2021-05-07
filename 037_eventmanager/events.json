@@ -1,0 +1,39 @@
+{
+    "events": [
+        {
+            "description": "JS Kurs",
+            "location": "Leoben, AT",
+            "date": "05.05.2021",
+            "capacity": 15,
+			"fee": 1090
+        },
+        {
+            "description": "CSS Kurs",
+            "location": "Kapfenberg, AT",
+            "date": "06.05.2021",
+            "capacity": 11,
+			"fee": 870
+        },
+		{
+            "description": "HTML Kurs",
+            "location": "Graz, AT",
+            "date": "07.05.2021",
+            "capacity": 11,
+			"fee": 870
+        },
+		{
+            "description": "PHP Kurs",
+            "location": "Leoben, AT",
+            "date": "08.05.2021",
+            "capacity": 20,
+			"fee": 699
+        },
+        {
+            "description": "JS Kurs",
+            "location": "Graz, AT",
+            "date": "08.05.2021",
+            "capacity": 20,
+			"fee": 2000
+        }
+    ]
+}

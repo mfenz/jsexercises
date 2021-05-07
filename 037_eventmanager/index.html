@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Willkommen!</title>
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1" />
+    <script src="js/jquery-3.6.0.js" defer></script>
+    <script src="jquery-ui.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="jquery-ui.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+    <h1>Veranstaltungen</h1>
+    <div>
+        <h3>Name</h3>
+        <input id="name-autocomplete" title="type &quot;a&quot;">
+    </div>
+    <div>
+        <h3>Kursbeitrag</h3>
+        <div id="fee-slider"></div>
+        <p><span data-filter-fee-min>0</span>€ - <span data-filter-fee-max>0</span>€</p>
+    </div>
+    <div>
+        <h3>Datum</h3>
+        <input type="text" id="event-datepicker">
+    </div>
+</header>
+
+<h2>Kurse</h2>
+<table id="courses">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Ort</th>
+            <th>Datum</th>
+            <th>Teilnehmer</th>
+            <th>Kursbeitrag</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<h1>Wichtige Informationen zur Buchung</h1>
+<button id="info-anzeigen">Info Toggle</button>
+<div id="tabs">
+    <ul>
+      <li><a href="#fragment-1"><span>Buchung</span></a></li>
+      <li><a href="#fragment-2"><span>Stornierung</span></a></li>
+      <li><a href="#fragment-3"><span>Fragen</span></a></li>
+    </ul>
+    <div id="fragment-1">
+      <p>First tab is active by default:</p>
+      <pre><code>$( "#tabs" ).tabs(); </code></pre>
+    </div>
+    <div id="fragment-2">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+    <div id="fragment-3">
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </div>
+  </div>
+
+
+
+</body>
+</html>

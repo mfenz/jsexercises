@@ -20,6 +20,17 @@ $(function(){
         // Funktion addTankbeleg aufrufen
         addTankbeleg(liter, km, betrag);
     });
+
+
+    // $(staticAncestors).on(eventName, dynamicChild, function() {});
+    // mit .on() auf dynamisch eingefügte Elemente reagieren
+    $('table tbody').on('click', 'button[data-remove-beleg-id]', function(event){
+        // Wert des data-Attributs auslesen
+        let id = $(this).data('remove-beleg-id');
+        console.log(`Es soll id=${id} gelöscht werden.`);
+        // Funktion aufrufen, id ist ein Argument
+        removeTankbeleg(id);
+    });
 });
 
 // ID für Tankbelege (speichert bisher größte ID)
@@ -109,4 +120,31 @@ function updateStatistik(){
     $('[data-stat-km]').text(kmSumme);
     $('[data-stat-l]').text(literSumme);
     $('[data-stat-verbrauch]').text(durchschnittsverbrauch);
+}
+
+/* Funktion removeTankbeleg, Übergabeparameter ist die
+   ID des zu löschenden Tankbelegs
+*/
+function removeTankbeleg(id){
+    // Gesuchtes Element mit id aus dem Array löschen
+    for(let i = 0; i < belege.length; i++){
+        // Beleg aus Array holen
+        let beleg = belege[i];
+        // Prüfen ob der Beleg die gesuchte ID hat
+        if(beleg.id == id){
+            // Beleg gefunden, aus Array löschen
+            // Löschen mit .splice(index, anzLöschendeElemente)
+            belege.splice(i, 1);
+            // Schleife beenden
+            break;
+        }
+    }
+
+    // Statistik aktualisieren
+    updateStatistik();
+
+    // <tr data-beleg-id="${tankbeleg.id}"> aus Tabelle löschen
+    // .remove() löscht alle gefundenen Knoten (HTML-Elemente) aus DOM
+    $(`tr[data-beleg-id=${id}]`).remove();
+
 }
