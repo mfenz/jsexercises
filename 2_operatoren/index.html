@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operatoren und Datentypen</title>
+        <!-- defer: Das Script soll erst ausgeführt werden wenn -->
+        <!-- der Browser den restlichen HTML-Code geparst hat. -->
+        <!-- Ansonsten könnte man im Script nicht auf den  -->
+        <!-- gesamten HTML Code zugreifen (da dieser erst danach
+            geladen und geparst wird). -->
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+
+        <!-- Den Vornamen der Person dynamisch mit JS einfügen -->
+        <!-- Herzlich willkommen Hansi -->
+        <h1>Herzlich willkommen <span id="first_name"></span></h1>
+
+        <!-- Lieber Hansi Maier,  -->
+        <p>Lieber <span id="full_name"></span></p>
+
+        <!-- 
+            du wurdest als Einziger ausgewählt und hast ein 
+            iPhone/Haus/Auto gewonnen! 
+        -->
+        <p>
+            du wurdest heute als Einziger ausgewählt und hast ein 
+            <span id="gift"></span> gewonnen!
+        </p>
+
+        <!-- Du bist 30 Jahre alt, verdienst 1725 €, 
+        und heute ist dein Glückstag! -->
+        <p>
+            Du bist <span id="age"></span> Jahre alt, 
+            verdienst <span id="salary"></span> €,
+            und heute ist dein Glückstag!
+        </p>
+
+        <!-- Melde dich innerhalb einer Minute und du bekommst
+        dein doppeltes Gehalt (3450 €) zusätzlich dazu! -->
+        <p>
+            Melde dich innerhalb einer Minute und du bekommst 
+            dein doppeltes Gehalt (<span id="double_salary"></span> €)
+            zusätzlich dazu!
+        </p>
+
+
+    </body>
+</html>

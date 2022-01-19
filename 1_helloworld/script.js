@@ -8,7 +8,7 @@ console.log(applicationTitle);
 let multiplikator = 1;
 let multiplikand = 5;
 let ergebnis = multiplikator * multiplikand;
-let ausgabe = multiplikator + " x" + multiplikand + " = " + ergebnis;
+let ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
 console.log(ausgabe);
 
 // Suche das HTML-Element mit der ID multiplikationstabelle
@@ -18,9 +18,49 @@ let div = document.getElementById("multiplikationstabelle");
 // Nehme was momentan auf textContent drauf steht her, 
 // und füge den Inhalt der Variable ausgabe hinten an
 // und schreibe beides zusammen wieder auf textContent
-div.textContent = div.textContent + ausgabe;
+div.innerHTML = div.innerHTML + ausgabe;
 
 multiplikator = multiplikator + 1;
 ergebnis = multiplikator * multiplikand;
-console.log(multiplikator + " x " + multiplikand + " = " + ergebnis);
-div.textContent = div.textContent + multiplikator + " x " + multiplikand + " = " + ergebnis;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
+
+multiplikator = multiplikator + 1;
+ergebnis = multiplikator * multiplikand;
+ausgabe = multiplikator + " x " + multiplikand + " = " + ergebnis + "<br>";
+div.innerHTML = div.innerHTML + ausgabe;
