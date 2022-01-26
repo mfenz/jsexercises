@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Schulnoten mit switch-case</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script.js' defer></script>
+    <style>
+        /* für jedes HTML-Element */
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* für jedes div: margin: 15px 0; */
+        div {
+            margin: 15px 0;
+            /*margin-top: 15px;
+            margin-bottom: 15px;
+            margin-left: 0;
+            margin-right: 0;*/
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Schulnoten</h1>
+    <p>
+        Bitte die Schulnote als Ziffer eingeben.<br>
+        Das Programm wandelt die Ziffer in die Wortbewertung um.
+    </p>
+
+    <form>
+        <div>
+            <label for="grade">Ziffer:</label><br>
+            <input type="text" id="grade" name="grade">
+        </div>
+
+        <div>
+            <button name="btsubmit">Wortbewertung ermitteln</button>
+        </div>
+
+        <div>
+            <label for="result">Wortbewertung:</label>
+            <input type="text" name="result" id="result" disabled>
+        </div>
+    </form>
+    
+</body>
+</html>
