@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BMI Rechner</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='script.js' defer></script>
+    <style>
+        div {
+            margin: 15px 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BMI Rechner</h1>
+    <form>
+        <div>
+            <label for="kg">Gewicht (kg):</label><br>
+            <input type="number" id="kg" name="kg">
+        </div>
+        
+        <div>
+            <label for="cm">Größe (cm):</label><br>
+            <input type="number" id="cm" name="cm">
+        </div>
+
+        <div>
+            <button name="btcalculate">BMI berechnen</button>
+        </div>
+
+        <div>
+            <label for="bmi">BMI (kg / Größe in m^2):</label><br>
+            <input type="number" id="bmi" name="bmi" disabled>
+        </div>
+
+    </form>
+    
+</body>
+</html>
