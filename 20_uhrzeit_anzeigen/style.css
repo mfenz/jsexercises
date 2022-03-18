@@ -1,0 +1,17 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#time, #auto_time {
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+}
+
+#controls {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
