@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Produktübersicht</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link type='text/css' href='main.css'>
+    <script src="models.js" defer></script>
+    <script src='script.js' defer></script>
+</head>
+<body>
+
+<h1>Produktübersicht</h1>
+<h2>Produkt anlegen</h2>
+<form>
+    <div id="error_messages">
+
+    </div>
+    <label for="id">Artikelnummer:</label><br>
+    <input type="text" name="id" id="id"><br>
+    <label for="name">Produktname:</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="price">Preis:</label><br>
+    <input type="text" name="price" id="price"><br>
+    <button name="bt_add_product">Produkt anlegen</button>
+</form>
+
+<h2>Alle Produkte</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Preis</th>
+            <th>Löschen</th>
+        </tr>
+    </thead>
+    <tbody id="products">
+        <!-- <tr>
+            <td>1</td>
+            <td>Computer 123</td>
+            <td>1299.99 €</td>
+            <td>
+                <form>
+                    <button data-id="1" class="bt_delete_product">Löschen</button>
+                </form>
+            </td>
+        </tr> -->
+    </tbody>
+</table>
+
+</body>
+</html>
